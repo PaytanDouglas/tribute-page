@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(#FFB329, #FF3C29);
+  background-image: linear-gradient(#DDD, #FFFD9E, #FFB329, #FF8905, #FF5A00, #E8390C, #FF3C29, #D73000, #89FFFE);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -8,6 +8,10 @@ nav {}
 div {}
 th {
   padding: 2vmin;
+}
+h1 {
+  border-left: red 3px solid;
+  background-image: linear-gradient(to right, #FFFD9E, transparent);
 }
 footer {
   align-items: center;
@@ -32,7 +36,7 @@ footer {
 }
 .left {transform: translate3d(0,-50%,0);}
 .right {transform: translate3d(0,-50%,0);}
-.arrow:hover {text-shadow: 0.5px -0.5px 0 white;}
+.arrow:hover {text-shadow: 0.5px -0.5px 0 #D73000;}
 
 .homebutton {
   color: black;
@@ -40,16 +44,20 @@ footer {
   text-decoration: none;
 }
 .homebutton:hover {
-  color: #FF3C29;
-  text-shadow: 0.5px -0.5px 0 white;
+  color: #D73000;
+  text-shadow: 0.5px -0.5px 0 #D73000;
 }
-.img1 {
+figure {
+  border: 3px solid white;
+  border-spacing: 0px;
   float: right;
-  margin: 10px;
-  padding: 5px;
+  padding: 0px 10px 10px;
   width: 25%;
 }
-.info {
+.img1 {
+  width: 100%;
+}
+.infobox {
   border: 2px solid white;
   float: left;
   margin: 2vmin;
