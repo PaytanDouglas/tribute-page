@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(#DDD, #FFFD9E, #FFB329, #FF8905, #FF5A00, #E8390C, #FF3C29, #D73000, #89FFFE);
+  background-image: linear-gradient(#EEE, #FFFD9E, #FFB329, #FF8905, #FF5A00, #E8390C, #FF3C29, #D73000, #89FFFE);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -10,8 +10,16 @@ th {
   padding: 2vmin;
 }
 h1 {
-  border-left: red 3px solid;
-  background-image: linear-gradient(to right, #FFFD9E, transparent);
+  border-left: #EEE 3px solid;
+  background-image: linear-gradient(to right, #FFFD9E, #FFB329, #FF8905, #FF5A00, #FF3C29, #D73000, #89FFFE, transparent);
+  display: flex;
+}
+figure {
+  border: 3px solid white;
+  border-spacing: 0px;
+  float: right;
+  padding: 0px 10px 10px;
+  width: 25%;
 }
 footer {
   align-items: center;
@@ -28,39 +36,55 @@ footer {
   display: block;
   justify-content: start;
 }
+.line1 {
+  color: white;
+  font-weight: 400;
+  margin: 1vmax 0vmax;
+}
+.line2 {
+  color: white;
+  font-weight: 400;
+  margin: 1vmax 0vmax 3vmax;
+}
 .arrow {
   color: black;
-  font-size: 6vmin;             /*---  Snippits of code from https://codepen.io/varystrategic/pen/zGrMQK  ---*/
+  font-size: 8vmin;             /*---  Snippits of code from https://codepen.io/varystrategic/pen/zGrMQK  ---*/
 	transition: all 200ms ease;   /*---  Transforming/hover arrow code by@varystrategic  ---*/
   text-decoration: none;
 }
 .left {transform: translate3d(0,-50%,0);}
 .right {transform: translate3d(0,-50%,0);}
-.arrow:hover {text-shadow: 0.5px -0.5px 0 #D73000;}
+.arrow:hover {color: #D73000; text-shadow: 0.5px -0.5px 2px #FFB329;}
 
 .homebutton {
   color: black;
+  font-size: 2em;
   font-weight: bolder;
   text-decoration: none;
 }
 .homebutton:hover {
   color: #D73000;
-  text-shadow: 0.5px -0.5px 0 #D73000;
+  text-shadow: 0.5px -0.5px 2px #FFB329;
 }
-figure {
-  border: 3px solid white;
-  border-spacing: 0px;
-  float: right;
-  padding: 0px 10px 10px;
-  width: 25%;
+.namebig {
+  align-items: center;
+  display: flex;
+  font-size: 3em;
+  font-weight: bolder;
+  justify-content: space-around;
+  margin-bottom: 2em;
 }
 .img1 {
   width: 100%;
 }
-.infobox {
+.boxoinfo {
+  display: flex;
+}
+.tablebox {
   border: 2px solid white;
+  display: inline flex;
   float: left;
-  margin: 2vmin;
+  margin: 2vmin 3vmin;
   padding: 2vmin;
   text-align: left;
 }
@@ -68,8 +92,4 @@ figure {
   font-style: italic;
   font-size: 1.5em;
   text-align: center;
-}
-.line {
-  color: white;
-  font-weight: 400;
 }
