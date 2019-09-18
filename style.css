@@ -6,10 +6,23 @@ body {
 head {}
 nav {}
 div {}
+th {
+  padding: 2vmin;
+}
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}
 .flex {
   align-items: center;
   display: flex;
   justify-content: space-around;
+}
+.notflex {
+  display: block;
+  justify-content: start;
 }
 .arrow {
   color: black;
@@ -17,17 +30,10 @@ div {}
 	transition: all 200ms ease;   /*---  Transforming/hover arrow code by@varystrategic  ---*/
   text-decoration: none;
 }
-.left {
-		left: 0;
-		transform: translate3d(0,-50%,0);
-}
-.right {
-		right: 0;
-		transform: translate3d(0,-50%,0);
-}
-.arrow:hover {
-		text-shadow: 0.5px -0.5px 0 white;
-}
+.left {transform: translate3d(0,-50%,0);}
+.right {transform: translate3d(0,-50%,0);}
+.arrow:hover {text-shadow: 0.5px -0.5px 0 white;}
+
 .homebutton {
   color: black;
   font-weight: bolder;
@@ -43,13 +49,19 @@ div {}
   padding: 5px;
   width: 25%;
 }
+.info {
+  border: 2px solid white;
+  float: left;
+  margin: 2vmin;
+  padding: 2vmin;
+  text-align: left;
+}
+.firstrow {
+  font-style: italic;
+  font-size: 1.5em;
+  text-align: center;
+}
 .line {
   color: white;
   font-weight: 400;
-}
-footer {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  padding: 1em;
 }
