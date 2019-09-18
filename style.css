@@ -1,4 +1,8 @@
 body {
+  background-image: linear-gradient(#FF3C29, #FFB329);
+  background-repeat: no-repeat;
+  background-position: center;
+/*  background-attachment: fixed; */
 
 }
 head {
@@ -7,6 +11,34 @@ head {
 nav {
 
 }
-footer {
+div {
 
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.arrow {
+  font-size: 6vmin;             /*---  Snippits of code from https://codepen.io/varystrategic/pen/zGrMQK  ---*/
+	transition: all 200ms ease;   /*---  Transforming/hover arrow code by@varystrategic  ---*/
+  text-decoration: none;
+  color: black;
+}
+.left {
+		left: 0;
+		transform: translate3d(0,-50%,0);
+}
+.right {
+		right: 0;
+		transform: translate3d(0,-50%,0);
+}
+.arrow:hover {
+		text-shadow: 0.5px -0.5px 0 white;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
