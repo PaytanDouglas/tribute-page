@@ -93,3 +93,10 @@ footer {
   font-size: 1.5em;
   text-align: center;
 }
+.gallery {
+  align: center;
+  border: 3px solid white;
+  height: 10vmax;
+  margin: 2vmin;
+  vertical-align: middle;
+}
