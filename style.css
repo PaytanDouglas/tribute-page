@@ -96,7 +96,34 @@ footer {
 .gallery {
   align: center;
   border: 3px solid white;
-  height: 10vmax;
-  margin: 2vmin;
   vertical-align: middle;
+  width: 100%;
 }
+.grid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+                "head head head"
+                "head2 head2 head2"
+                "1img 2img 3img"
+                "4img 5img 6img"
+                "7img 8img 9img";
+                /*"1img 1img 4img"
+                "2img 2img 4img"
+                "5img 3img 3img"
+                "5img 6img 6img";*/
+}
+.h1gallery{grid-area: head;}
+.pgallery {grid-area: head2;}
+.one {grid-area: 1img;}
+.two {grid-area: 2img;}
+.three {grid-area: 3img;}
+.four {grid-area: 4img;}
+.five {grid-area: 5img;}
+.six {grid-area: 6img;}
+.seven {grid-area: 7img;}
+.eight {grid-area: 8img;}
+.nine {grid-area: 9img;}
+.ten {grid-area: 10img;}
+.eleven {grid-area: 11img;}
+.twelve {grid-area: 12img;}
