@@ -9,6 +9,10 @@ div {}
 th {
   padding: 2vmin;
 }
+img {
+  width: 100%;
+  height: auto;
+}
 h1 {
   border-left: #EEE 3px solid;
   background-image: linear-gradient(to right, #FFFD9E, #FFB329, #FF8905, #FF5A00, #FF3C29, #D73000, #89FFFE, transparent);
@@ -95,35 +99,44 @@ footer {
 }
 .gallery {
   align: center;
-  border: 3px solid white;
   vertical-align: middle;
   width: 100%;
 }
-.grid {
+.grid-container {
   display: grid;
   grid-gap: 1em;
-  grid-template-areas:
-                "head head head"
-                "head2 head2 head2"
-                "1img 2img 3img"
-                "4img 5img 6img"
-                "7img 8img 9img";
-                /*"1img 1img 4img"
-                "2img 2img 4img"
-                "5img 3img 3img"
-                "5img 6img 6img";*/
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
 }
-.h1gallery{grid-area: head;}
-.pgallery {grid-area: head2;}
-.one {grid-area: 1img;}
-.two {grid-area: 2img;}
-.three {grid-area: 3img;}
-.four {grid-area: 4img;}
-.five {grid-area: 5img;}
-.six {grid-area: 6img;}
-.seven {grid-area: 7img;}
-.eight {grid-area: 8img;}
-.nine {grid-area: 9img;}
-.ten {grid-area: 10img;}
-.eleven {grid-area: 11img;}
-.twelve {grid-area: 12img;}
+.h1gallery{}
+.pgallery {}
+.one {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+.two {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+.three {
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+.four {
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+}
+.five {
+  grid-column: 2 / 2;
+  grid-row: 2 / 4;
+}
+.six {
+  grid-column: 3 / 3;
+  grid-row: 2 / 2;
+}
+.seven {
+  grid-column: 1 / 1;
+  grid-row: 3 / 3;
+}
+.eight {}
+.nine {}
