@@ -3,15 +3,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-head {}
-nav {}
-div {}
-th {
-  padding: 2vmin;
-}
-img {
-  width: 100%;
-}
+th {padding: 2vmin;}
+img {width: 100%;}
 h1 {
   border-left: #EEE 3px solid;
   background-image: linear-gradient(to right, #FFFD9E, #FFB329, #FF8905, #FF5A00, #FF3C29, #D73000, #89FFFE, transparent);
@@ -20,17 +13,15 @@ h1 {
 figure {
   border: 3px solid white;
   border-spacing: 0px;
-  float: right;
-  padding: 0px 10px 10px;
+  padding: 0 0 10px 0;
   width: 25%;
 }
+figcaption {margin-left: .5em;}
 li {
   list-style-type: disc;
   margin: 1em 0em;
 }
-ul ul li {
-  list-style-type: circle;
-}
+ul ul li {list-style-type: circle;}
 footer {
   align-items: center;
   display: flex;
@@ -92,12 +83,10 @@ footer {
   justify-content: space-around;
   margin-bottom: 2em;
 }
-.img1 {
-  width: 100%;
-}
-.boxoinfo {
-  display: flex;
-}
+.img1 {float: right;}
+.img2 {float:left;}
+.img3 {float: right;}
+.boxoinfo {display: flex;}
 .tablebox {
   border: 2px solid white;
   display: inline flex;
@@ -111,19 +100,13 @@ footer {
   font-size: 1.5em;
   text-align: center;
 }
-ul.quotes {
-  font-style: italic;
-}
-ul.quotes li {
-  list-style-type: circle;
-}
+ul.quotes {font-style: italic;}
+/*ul.quotes li {list-style-type: circle;}*/
 .gallery {
   align: center;
   vertical-align: middle;
   width: 100%;
 }
-.h1gallery{}
-.pgallery {}
 .grid-container {
   display: grid;
   grid-gap: 1em;
@@ -168,7 +151,6 @@ ul.quotes li {
   width: 100%;
   height: 100%;
 }
-
 .one {grid-area: one;}
 .two {grid-area: two;}
 .three {grid-area: three;}
@@ -179,9 +161,7 @@ ul.quotes li {
 .eight {grid-area: eight;}
 
 @media screen and (max-width: 767px) {
-  figure {
-    display: none;
-  }
+  .img1 {display: none;}
   .tablebox {
     border: 2px solid white;
     display: inline-flex;
