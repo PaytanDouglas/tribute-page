@@ -24,6 +24,13 @@ figure {
   padding: 0px 10px 10px;
   width: 25%;
 }
+li {
+  list-style-type: disc;
+  margin: 1em 0em;
+}
+ul ul li {
+  list-style-type: circle;
+}
 footer {
   align-items: center;
   display: flex;
@@ -57,17 +64,25 @@ footer {
 }
 .left {transform: translate3d(0,-50%,0);}
 .right {transform: translate3d(0,-50%,0);}
-.arrow:hover {color: #D73000; text-shadow: 0.5px -0.5px 2px #FFB329;}
+.arrow:hover {
+  background-image: linear-gradient(to right, #FFFD9E, #FF8905, #D73000, #89FFFE);
+  color: #EEE;
+  padding: 5% 10%;
+  text-shadow: 0.5px -0.5px 2px #333;
+}
 
 .homebutton {
   color: black;
   font-size: 2em;
   font-weight: bolder;
   text-decoration: none;
+  transition: all 200ms ease;
 }
 .homebutton:hover {
-  color: #D73000;
-  text-shadow: 0.5px -0.5px 2px #FFB329;
+  background-image: linear-gradient(to right, #FFFD9E, #FF8905, #D73000, #89FFFE);
+  color: #EEE;
+  padding: 5% 10%;
+  text-shadow: 0.5px -0.5px 2px #333;
 }
 .namebig {
   align-items: center;
@@ -96,23 +111,28 @@ footer {
   font-size: 1.5em;
   text-align: center;
 }
+ul.quotes {
+  font-style: italic;
+}
+ul.quotes li {
+  list-style-type: circle;
+}
 .gallery {
   align: center;
   vertical-align: middle;
   width: 100%;
 }
+.h1gallery{}
+.pgallery {}
 .grid-container {
   display: grid;
   grid-gap: 1em;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-areas:
+  "one two three"
+  "four five six"
+  "seven five eight";
 }
-.h1gallery{}
-.pgallery {}
-.one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
-  width: 100%;
-  height: 100%;
-}
+
 .one {
   grid-column: 1 / 1;
   grid-row: 1 / 1;
@@ -143,3 +163,42 @@ footer {
 }
 .eight {}
 .nine {}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+  width: 100%;
+  height: 100%;
+}
+
+.one {grid-area: one;}
+.two {grid-area: two;}
+.three {grid-area: three;}
+.four {grid-area: four;}
+.five {grid-area: five;}
+.six {grid-area: six;}
+.seven {grid-area: seven;}
+.eight {grid-area: eight;}
+
+@media screen and (max-width: 767px) {
+  figure {
+    display: none;
+  }
+  .tablebox {
+    border: 2px solid white;
+    display: inline-flex;
+    margin: 2vmin 3vmin;
+    padding: 0;
+    text-align: left;
+  }
+  .grid-container {
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight"
+    "nine";
+  }
+}
