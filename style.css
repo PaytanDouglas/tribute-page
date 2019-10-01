@@ -49,16 +49,17 @@ footer {
 }
 .arrow {
   color: black;
-  font-size: 8vmin;             /*---  Snippits of code from https://codepen.io/varystrategic/pen/zGrMQK  ---*/
+  font-size: 4vmin;             /*---  Snippits of code from https://codepen.io/varystrategic/pen/zGrMQK  ---*/
 	transition: all 200ms ease;   /*---  Transforming/hover arrow code by@varystrategic  ---*/
   text-decoration: none;
+  margin-top: 3vmin;
 }
 .left {transform: translate3d(0,-50%,0);}
 .right {transform: translate3d(0,-50%,0);}
 .arrow:hover {
   background-image: linear-gradient(to right, #FFFD9E, #FF8905, #D73000, #89FFFE);
   color: #EEE;
-  padding: 5% 10%;
+  padding: 1% 2%;
   text-shadow: 0.5px -0.5px 2px #333;
 }
 
@@ -72,7 +73,7 @@ footer {
 .homebutton:hover {
   background-image: linear-gradient(to right, #FFFD9E, #FF8905, #D73000, #89FFFE);
   color: #EEE;
-  padding: 5% 10%;
+  padding: 2% 4%;
   text-shadow: 0.5px -0.5px 2px #333;
 }
 .namebig {
