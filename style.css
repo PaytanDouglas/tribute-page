@@ -1,13 +1,26 @@
+:root {
+  --palegray: #EEE;
+  --paleyellow: #FFFD9E;
+  --paleorange: #FFB329;
+  --pureorange: #FF8905;
+  --burntorange: #FF5A00;
+  --lightred: #FF3C29;
+  --darkred: #E8390C;
+  --superdarkred: #D73000;
+  --iceblue: #89FFFE;
+  --gradient: var(--paleyellow), var(--paleorange), var(--pureorange), var(--burntorange), var(--lightred), var(--superdarkred), var(--iceblue);
+  --navgradient: var(--paleyellow), var(--pureorange), var(--superdarkred), var(--iceblue);
+}
 body {
-  background-image: linear-gradient(#EEE, #FFFD9E, #FFB329, #FF8905, #FF5A00, #E8390C, #FF3C29, #D73000, #89FFFE);
+  background-image: linear-gradient(var(--palegray), var(--gradient));
   background-position: center;
   background-repeat: no-repeat;
 }
 th {padding: 2vmin;}
 img {width: 100%;}
 h1 {
-  border-left: #EEE 3px solid;
-  background-image: linear-gradient(to right, #FFFD9E, #FFB329, #FF8905, #FF5A00, #FF3C29, #D73000, #89FFFE, transparent);
+  border-left: var(--palegray) 3px solid;
+  background-image: linear-gradient(to right, var(--gradient), transparent);
   display: flex;
 }
 figure {
@@ -51,12 +64,11 @@ ul ul li {list-style-type: circle;}
 .left {transform: translate3d(0,-50%,0);}
 .right {transform: translate3d(0,-50%,0);}
 .arrow:hover {
-  background-image: linear-gradient(to right, #FFFD9E, #FF8905, #D73000, #89FFFE);
-  color: #EEE;
+  background-image: linear-gradient(to right, var(--navgradient));
+  color: var(--palegray);
   padding: 1% 2%;
   text-shadow: 0.5px -0.5px 2px #333;
 }
-
 .homebutton {
   color: black;
   font-size: 2em;
@@ -65,8 +77,8 @@ ul ul li {list-style-type: circle;}
   transition: all 200ms ease;
 }
 .homebutton:hover {
-  background-image: linear-gradient(to right, #FFFD9E, #FF8905, #D73000, #89FFFE);
-  color: #EEE;
+  background-image: linear-gradient(to right, var(--navgradient));
+  color: var(--palegray);
   padding: 2% 4%;
   text-shadow: 0.5px -0.5px 2px #333;
 }
@@ -167,10 +179,7 @@ ul.quotes {font-style: italic;}
   height: 100%;
   padding: 1em 0;
 }
-.footnav img {}
-.footnav i {
-  color: black;
-}
+.footnav i {color: black;}
 .top {
   display: block !important;
 }
@@ -183,26 +192,6 @@ ul.quotes {font-style: italic;}
   width: 50%;
   text-align: center;
 }
-/*@media screen and (min-width: 550px) {
-  .fig2, .fig3, .fig4, .fig5, .fig6 {
-    display: block;
-    margin: auto;
-    width: 275px;
-  }
-}
-@media screen and (min-width: 767px) {
-.fig2, .fig3, .fig4, .fig5, .fig6 {
-  display: block;
-  margin: 0px 10px;
-  width: 30px;
-}
-@media screen and (min-width: 990px) {
-  .fig1, .fig2, .fig3, .fig4, .fig5, .fig6 {
-    display: block;
-    width: 400px;
-  }
-}
-*/
 @media screen and (max-width: 767px) {
   .fig1 {display: none;}
   .tablebox {
